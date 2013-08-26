@@ -1,0 +1,12 @@
+/* 
+  SSPreferredBrowsers.strings
+  PreferredBrowserExample
+
+  Created by Jonathan Hersh on 8/25/13.
+  Copyright (c) 2013 Splinesoft. All rights reserved.
+*/
+
+"SAFARI" = "Safari";
+"CHROME" = "Chrome";
+"1PW" = "1Password";
+"OPERA" = "Opera Mini";

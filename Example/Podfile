@@ -1,0 +1,7 @@
+platform :ios, '6.0'
+
+xcodeproj 'PreferredBrowserExample'
+
+pod 'SSPreferredBrowser', :path => "../"
+
+pod 'SSDataSources'
