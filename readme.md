@@ -4,7 +4,7 @@
 
 Quickly present available web browsers, save prefs, and perform common browser actions.
 
-More to the point, `SSPreferredBrowser` makes it easy to build a table like this:
+`SSPreferredBrowser` makes it easy to build a table like this:
 
 ![](https://raw.github.com/splinesoft/SSPreferredBrowser/master/Example/browser.png)
 
@@ -27,12 +27,17 @@ pod 'SSPreferredBrowser', :head # YOLO
 Check out `Example` for the source code of the table in the screenshot above.
 
 ```objc
-// The user's preferred browser name, localized. 
-// Something like "Chrome" or "Opera Mini"
-NSLog(@"Opening a URL in %@!", [SSPreferredBrowser preferredBrowserName]);
+// If the user prefers to use an external browser over an in-app webview,
+// then open a URL in the user's preferred browser
+if( [SSPreferredBrowser shouldOpenURLsExternally] ) {
+    // The user's preferred browser name, localized. 
+    // Something like "Chrome" or "Opera Mini"
+    NSLog(@"Opening a URL in %@!", [SSPreferredBrowser preferredBrowserName]);
 
-// Open a URL in the user's preferred browser
-[SSPreferredBrowser openURLInPreferredBrowser:@"http://www.splinesoft.net"];
+    [SSPreferredBrowser openURLInPreferredBrowser:@"http://www.splinesoft.net"];
+} else {
+	// Open an in-app webview
+}
 ```
 
 # Browsers
