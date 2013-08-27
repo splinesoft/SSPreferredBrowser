@@ -1,5 +1,5 @@
 # SSPreferredBrowser
-
+ 
 ![](http://cocoapod-badges.herokuapp.com/v/SSPreferredBrowser/badge.png) &nbsp; ![](http://cocoapod-badges.herokuapp.com/p/SSPreferredBrowser/badge.png)
 
 Quickly present available web browsers, save prefs, and perform common browser actions.
