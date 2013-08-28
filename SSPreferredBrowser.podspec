@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SSPreferredBrowser"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Quickly present available web browsers, save prefs, and perform common actions."
   s.homepage     = "https://github.com/splinesoft/SSPreferredBrowser"
   s.license      = { :type => 'MIT', :file => 'LICENSE'  }
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source_files = 'SSPreferredBrowser/*.{h,m}'
   s.frameworks   = 'UIKit'
   s.resources    = ['Resources/*']
-  s.dependency     'SSAppURLs', '>= 0.0.5'
+  s.dependency     'SSAppURLs', '>= 0.0.7'
 end

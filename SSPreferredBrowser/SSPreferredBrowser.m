@@ -19,8 +19,8 @@ static inline NSString * SSLocalizedBrowserWithType(SSAppURLType type) {
         case SSAppURLTypeChromeHTTPS:
             key = @"CHROME";
             break;
-        case SSAppURLType1PasswordHTTPURL:
-        case SSAppURLType1PasswordHTTPSURL:
+        case SSAppURLType1PasswordHTTP:
+        case SSAppURLType1PasswordHTTPS:
             key = @"1PW";
             break;
         case SSAppURLTypeSafariHTTP:
@@ -48,7 +48,7 @@ static inline NSString * SSLocalizedBrowserWithType(SSAppURLType type) {
     
     for( NSNumber *browser in @[
             @(SSAppURLTypeChromeHTTP),
-            @(SSAppURLType1PasswordHTTPURL),
+            @(SSAppURLType1PasswordHTTP),
             @(SSAppURLTypeOperaHTTP),
         ] ) {
         
@@ -133,13 +133,13 @@ static inline NSString * SSLocalizedBrowserWithType(SSAppURLType type) {
                 targetType = SSAppURLTypeOperaHTTP;
             
             break;
-        case SSAppURLType1PasswordHTTPURL:
-        case SSAppURLType1PasswordHTTPSURL:
+        case SSAppURLType1PasswordHTTP:
+        case SSAppURLType1PasswordHTTPS:
             
             if( isHTTPS )
-                targetType = SSAppURLType1PasswordHTTPSURL;
+                targetType = SSAppURLType1PasswordHTTPS;
             else
-                targetType = SSAppURLType1PasswordHTTPURL;
+                targetType = SSAppURLType1PasswordHTTP;
             
             break;
         default:
