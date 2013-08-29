@@ -1,6 +1,6 @@
 # SSPreferredBrowser
  
-![](http://cocoapod-badges.herokuapp.com/v/SSPreferredBrowser/badge.png) &nbsp; ![](http://cocoapod-badges.herokuapp.com/p/SSPreferredBrowser/badge.png)
+![](http://cocoapod-badges.herokuapp.com/v/SSPreferredBrowser/badge.png) &nbsp; ![](http://cocoapod-badges.herokuapp.com/p/SSPreferredBrowser/badge.png) &nbsp; [![Build Status](https://travis-ci.org/splinesoft/SSPreferredBrowser.png?branch=master)](https://travis-ci.org/splinesoft/SSPreferredBrowser)
 
 Quickly present available web browsers, save prefs, and perform common browser actions.
 
