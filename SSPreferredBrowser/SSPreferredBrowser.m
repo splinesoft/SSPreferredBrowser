@@ -147,7 +147,7 @@ static inline NSString * SSLocalizedBrowserWithType(SSAppURLType type) {
             return NO;
     }
     
-    return [[UIApplication sharedApplication] openAppType:browserType
+    return [[UIApplication sharedApplication] openAppType:targetType
                                                 withValue:[targetURL absoluteString]];
 }
 
