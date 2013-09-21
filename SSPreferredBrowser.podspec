@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SSPreferredBrowser"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Quickly present available web browsers, save prefs, and perform common actions."
   s.homepage     = "https://github.com/splinesoft/SSPreferredBrowser"
   s.license      = { :type => 'MIT', :file => 'LICENSE'  }
