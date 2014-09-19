@@ -16,7 +16,7 @@ Quickly present available web browsers, save prefs, and perform common browser a
 
 # Install
 
-Install with [Cocoapods](http://cocoapods.org/). Add to your Podfile:
+Install with [CocoaPods](http://cocoapods.org/). Add to your `Podfile`:
 
 ```
 pod 'SSPreferredBrowser', :head # YOLO
