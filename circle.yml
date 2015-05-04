@@ -1,0 +1,19 @@
+machine:
+  environment:
+    LANG: en_US.UTF-8
+    LC_CTYPE: en_US.UTF-8
+  xcode:
+    version: "6.3.1"
+dependencies:
+  pre:
+    - xcrun instruments -w "iPhone 6 (8.3 Simulator)" || exit 0
+  override:    
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4
+    - pod install --project-directory=Example
+test:
+  override:
+    - set -o pipefail && xcodebuild -workspace Example/PreferredBrowserExample.xcworkspace
+      -scheme PreferredBrowserExample -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" 
+      clean build | xcpretty -c
+    - bundle exec pod lib lint --quick
+    - bundle exec obcd --path SSPreferredBrowser find HeaderStyle

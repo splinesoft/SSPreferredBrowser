@@ -1,6 +1,6 @@
 # SSPreferredBrowser
  
-[![Build Status](https://travis-ci.org/splinesoft/SSPreferredBrowser.png?branch=master)](https://travis-ci.org/splinesoft/SSPreferredBrowser)
+[![Circle CI](https://circleci.com/gh/splinesoft/SSPreferredBrowser.svg?style=svg)](https://circleci.com/gh/splinesoft/SSPreferredBrowser)
 
 Quickly present available web browsers, save prefs, and perform common browser actions.
 

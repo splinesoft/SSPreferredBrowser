@@ -1,20 +1,20 @@
 PODS:
   - SSAppURLs (0.1.0)
-  - SSDataSources (0.7.1)
+  - SSDataSources (0.8.5)
   - SSPreferredBrowser (0.0.3):
     - SSAppURLs (>= 0.0.7)
 
 DEPENDENCIES:
   - SSDataSources
-  - SSPreferredBrowser (from `../`)
+  - SSPreferredBrowser (from `../SSPreferredBrowser.podspec`)
 
 EXTERNAL SOURCES:
   SSPreferredBrowser:
-    :path: ../
+    :path: "../SSPreferredBrowser.podspec"
 
 SPEC CHECKSUMS:
-  SSAppURLs: 86afc9c11c9a06fb7ad773f32cad5d7f91f220f5
-  SSDataSources: a92a102491a3f6ab45962577a7fe3784e7b20c2e
-  SSPreferredBrowser: 12cb57ab449227eec563a39708870cff5380246d
+  SSAppURLs: 945572b74ae04e27522a58f144967715e2fcd7a6
+  SSDataSources: b01170fb23b82acf0649194e9189b0bf5f702681
+  SSPreferredBrowser: 22ddc1fd44f754f0b8c68bb380e3e9367d5c33b4
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.37.0

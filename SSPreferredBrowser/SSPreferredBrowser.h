@@ -1,5 +1,5 @@
 //
-//  SSPreferredBrowser
+//  SSPreferredBrowser.h
 //  Splinesoft
 //
 //  Created by Jonathan Hersh on 8/25/13.

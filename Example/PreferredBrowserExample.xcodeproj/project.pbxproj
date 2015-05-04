@@ -22,7 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24907EF306C4445593FFAA67 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		1E845E0C29EAAFFA3CF82FA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5BEE17970408538A9CC7F8DF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5E942BA817CB124900D24A65 /* PreferredBrowserExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreferredBrowserExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E942BAB17CB124900D24A65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5E942BAD17CB124900D24A65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +64,7 @@
 				5E942BB117CB124900D24A65 /* PreferredBrowserExample */,
 				5E942BAA17CB124900D24A65 /* Frameworks */,
 				5E942BA917CB124900D24A65 /* Products */,
-				24907EF306C4445593FFAA67 /* Pods.xcconfig */,
+				7C206A0D8F436BC44DD1C08A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +121,15 @@
 			);
 			name = Resources;
 			path = ../../Resources;
+			sourceTree = "<group>";
+		};
+		7C206A0D8F436BC44DD1C08A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE17970408538A9CC7F8DF /* Pods.debug.xcconfig */,
+				1E845E0C29EAAFFA3CF82FA5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +224,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -312,7 +322,7 @@
 		};
 		5E942BCF17CB124900D24A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24907EF306C4445593FFAA67 /* Pods.xcconfig */;
+			baseConfigurationReference = 5BEE17970408538A9CC7F8DF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreferredBrowserExample/PreferredBrowserExample-Prefix.pch";
@@ -324,7 +334,7 @@
 		};
 		5E942BD017CB124900D24A65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24907EF306C4445593FFAA67 /* Pods.xcconfig */;
+			baseConfigurationReference = 1E845E0C29EAAFFA3CF82FA5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreferredBrowserExample/PreferredBrowserExample-Prefix.pch";

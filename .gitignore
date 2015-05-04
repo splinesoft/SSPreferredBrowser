@@ -18,3 +18,5 @@ DerivedData
 .idea/
 Example/Pods
 *.xcuserstate
+vendor/bundle
+.bundle
